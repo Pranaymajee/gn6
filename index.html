@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gentle Noise</title>
+
+  <link rel="icon" href="logo.png">
+
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+  <!-- fullPage css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+  <!-- aos-css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.0.2/aos.css" integrity="sha512-ksbpl5EUb4HLEKUNItsPMT/Ih6KcISE53GbYOu3xFUVYvTSSX5AJxTI2aigdQm9uNSkSsRMHsSGNKppkt691lw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+  <main class="wrapper">
+    <div class="shape-blob"></div>
+    	<div class="shape-blob one"></div>
+    	<div class="shape-blob two"></div>
+    <div id="fullpage">
+      <div class="section">
+        <div class="slide homeslide">
+          <section id="home">
+            <h3 class="logo-text">Gentle Noise</h3>
+            <img class="logo" src="logo.png" alt="">
+            <div class="home-parent">
+              <div class="home-child-1">
+                <div class="homesvg">
+                  <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2500" src="homesvg.svg" alt="">
+                </div>
+              </div>
+
+              <div class="home-child-2">
+                <div class="title-box" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="2500">
+                  <h3 class="h31" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2500">Empty Your <span>SOUL</span><span>MIND</span></h3>
+                  <!-- <h3 class="h32" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2500">Empty Your Mind</h3> -->
+                </div>
+
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2500">Natural sounds relax you because they are constant noises of a pleasant pitch.
+                  They will keep you sane, improve your focus and boost your productivity.</p>
+
+                  <div class="container">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                  </div>
+
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section id="forest">
+            <div class="forest-div">
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- for image -->
+                  <div class="col-md-6 col-sm-12 image-set col-lg-6">
+                    <p class="div-heading">Forest</p>
+                    <img src="images/forest.jpg" alt="" srcset="" class="img-fluid albumimage">
+                  </div>
+                  <!-- for grid musics -->
+                  <div class="col-md-6 col-sm-12 col-lg-6 grid-elements">
+
+
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <h3 class="h3cricket">Cricket</h3>
+                        <div id="imageborder-cricket">
+                          <img id="cricketsound" src="icons/cricket.png" alt="" srcset="">
+                        </div>
+                        <input class="volume1" type="range" min="0" max="100" value="100" onchange="volume1_change()" id="volume1">
+                      </div>
+
+                      <div class="col">
+                        <h3 class="h3rain">Rain</h3>
+                        <div id="imageborder-rain">
+                          <img id="rainsound" src="icons/rain.png" alt="" srcset="">
+                        </div>
+                        <input class="volume2" type="range" min="0" max="100" value="100" onchange="volume2_change()" id="volume2">
+                      </div>
+
+                      <div class="col">
+                        <h3 class="h3birds">Birds</h3>
+                        <div id="imageborder-birds">
+                          <img id="birdssound" src="icons/birds.png" alt="" srcset="">
+                        </div>
+                        <input class="volume3" type="range" min="0" max="100" value="100" onchange="volume3_change()" id="volume3">
+                      </div>
+                    </div>
+
+
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <h3 class="h3wind">Wind</h3>
+                        <div id="imageborder-wind">
+                          <img id="windsound" src="icons/wind.png" alt="" srcset="">
+                        </div>
+                        <input class="volume4" type="range" min="0" max="100" value="100" onchange="volume4_change()" id="volume4">
+                      </div>
+
+                      <div class="col">
+                        <h3 class="h3river">River</h3>
+                        <div id="imageborder-river">
+                          <img id="riversound" src="icons/river.png" alt="" srcset="">
+                        </div>
+                        <input class="volume5" type="range" min="0" max="100" value="100" onchange="volume5_change()" id="volume5">
+                      </div>
+
+                      <div class="col">
+                        <h3 class="h3storm">Storm</h3>
+                        <div id="imageborder-storm">
+                          <img id="stormsound" src="icons/storm.png" alt="" srcset="">
+                        </div>
+                        <input class="volume6" type="range" min="0" max="100" value="100" onchange="volume6_change()" id="volume6">
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <h3 class="h3wolf">Wolf</h3>
+                        <div id="imageborder-wolf">
+                          <img id="wolfsound" src="icons/wolf.png" alt="" srcset="">
+                        </div>
+                        <input class="volume7" type="range" min="0" max="100" value="100" onchange="volume7_change()" id="volume7">
+                      </div>
+
+                      <div class="col">
+                        <h3 class="h3owl">Owl</h3>
+                        <div id="imageborder-owl">
+                          <img id="owlsound" src="icons/owl.png" alt="" srcset="">
+                        </div>
+                        <input class="volume8" type="range" min="0" max="100" value="100" onchange="volume8_change()" id="volume8">
+                      </div>
+
+                      <div class="col">
+                        <h3 class="h3campfire">Campfire</h3>
+                        <div id="imageborder-campfire">
+                          <img id="campfiresound" src="icons/campfire.png" alt="" srcset="">
+                        </div>
+                        <input class="volume9" type="range" min="0" max="100" value="100" onchange="volume9_change()" id="volume9">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section id="urban">
+            <div class="urban-div">
+              <!-- ADD BOOTSTRAP CODE HERE -->
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- for image -->
+                  <div class="col-md-6 col-sm-12 image-set col-lg-6">
+                    <p class="div-heading">Urban</p>
+                    <img src="images/urban.jpg" alt="" srcset="" class="img-fluid albumimage">
+                  </div>
+                  <!-- for grid musics -->
+                  <div class="col-md-6 col-sm-12 col-lg-6 grid-elements">
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <h3 class="h3traffic">Traffic</h3>
+                        <div id="imageborder-traffic">
+                          <img id="trafficsound" src="icons/traffic.png" alt="" srcset="">
+                        </div>
+                        <input class="volume10" type="range" min="0" max="100" value="100" onchange="volume10_change()" id="volume10">
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section id="beach">
+            <div class="beach-div">
+              <!-- ADD BOOTSTRAP CODE HERE -->
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- for image -->
+                  <div class="col-md-6 col-sm-12 image-set col-lg-6">
+                    <p class="div-heading">Beach</p>
+                    <img src="images/beach.jpg" alt="" srcset="" class="img-fluid albumimage">
+                  </div>
+                  <!-- for grid musics -->
+                  <div class="col-md-6 col-sm-12 col-lg-6 grid-elements">
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section id="eastasia">
+            <div class="eastasia-div">
+              <!-- ADD BOOTSTRAP CODE HERE -->
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- for image -->
+                  <div class="col-md-6 col-sm-12 image-set col-lg-6">
+                    <p class="div-heading">East Asia</p>
+                    <img src="images/eastasia.jpg" alt="" srcset="" class="img-fluid albumimage">
+                  </div>
+                  <!-- for grid musics -->
+                  <div class="col-md-6 col-sm-12 col-lg-6 grid-elements">
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section id="instrumental">
+            <div class="instrumental-div">
+              <!-- ADD BOOTSTRAP CODE HERE -->
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- for image -->
+                  <div class="col-md-6 col-sm-12 image-set col-lg-6">
+                    <p class="div-heading">Instrumental</p>
+                    <img src="images/instrumental.jpg" alt="" srcset="" class="img-fluid albumimage">
+                  </div>
+                  <!-- for grid musics -->
+                  <div class="col-md-6 col-sm-12 col-lg-6 grid-elements">
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section id="countryside">
+            <div class="countryside-div">
+              <!-- ADD BOOTSTRAP CODE HERE -->
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- for image -->
+                  <div class="col-md-6 col-sm-12 image-set col-lg-6">
+                    <p class="div-heading">Country Side</p>
+                    <img src="images/countryside.jpg" alt="" srcset="" class="img-fluid albumimage">
+                  </div>
+                  <!-- for grid musics -->
+                  <div class="col-md-6 col-sm-12 col-lg-6 grid-elements">
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-left: 0px; margin-right: 0px;">
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="imageborder">
+                          <img src="waterwave.png" alt="" srcset="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section id="developer">
+            <div class="developer-div">
+              <!-- ADD BOOTSTRAP CODE HERE -->
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.0.2/aos.js" integrity="sha512-678bHRnILWQudsPcjDbSoYtwimEk8yPq7BBWeJaFoSHPf7Ob7N7au8M49yY9Wbpmmi0PvDzf3Rca1mbmYQLAxQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="app.js" defer></script>
+
+  <!-- Audio files -->
+  <!-- forest -->
+  <audio src="sounds/cricket.ogg" id="cricket" type="audio/ogg"></audio>
+  <audio src="sounds/rain.ogg" id="rain" type="audio/ogg"></audio>
+  <audio src="sounds/birds.ogg" id="birds" type="audio/ogg"></audio>
+  <audio src="sounds/wind.ogg" id="wind" type="audio/ogg"></audio>
+  <audio src="sounds/river.ogg" id="river" type="audio/ogg"></audio>
+  <audio src="sounds/storm.ogg" id="storm" type="audio/ogg"></audio>
+  <audio src="sounds/wolf.ogg" id="wolf" type="audio/ogg"></audio>
+  <audio src="sounds/owl.ogg" id="owl" type="audio/ogg"></audio>
+  <audio src="sounds/campfire.ogg" id="campfire" type="audio/ogg"></audio>
+  <!-- urban -->
+  <audio src="sounds/traffic.ogg" id="traffic" type="audio/ogg"></audio>
+  <audio src="police.ogg" id="police" type="audio/ogg"></audio>
+  <audio src="people.ogg" id="people" type="audio/ogg"></audio>
+  <audio src="train.ogg" id="train" type="audio/ogg"></audio>
+  <audio src="pigeons.ogg" id="pigeons" type="audio/ogg"></audio>
+  <audio src="traintrip.ogg" id="traintrip" type="audio/ogg"></audio>
+  <audio src="work.ogg" id="work" type="audio/ogg"></audio>
+  <audio src="wind.ogg" id="wind" type="audio/ogg"></audio>
+  <audio src="truckengine.ogg" id="truckengine" type="audio/ogg"></audio>
+  <!-- beach -->
+  <audio src="seagull.ogg" id="seagull" type="audio/ogg"></audio>
+  <audio src="boat.ogg" id="boat" type="audio/ogg"></audio>
+  <audio src="rowboat.ogg" id="rowboat" type="audio/ogg"></audio>
+  <audio src="campfire.ogg" id="campfire" type="audio/ogg"></audio>
+  <audio src="melody.ogg" id="melody" type="audio/ogg"></audio>
+  <audio src="guitar.ogg" id="guitar" type="audio/ogg"></audio>
+  <audio src="waves.ogg" id="waves" type="audio/ogg"></audio>
+  <audio src="rain.ogg" id="rain" type="audio/ogg"></audio>
+  <audio src="storm.ogg" id="storm" type="audio/ogg"></audio>
+
+
+
+</body>
+
+</html>
