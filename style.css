@@ -787,7 +787,7 @@ input[type="range"]::-webkit-range-progress {
 
   .h31 span{
     position: absolute;
-    top: 24px;
+    top: 23.55px;
     left: 5.7rem;
     font-size: 2.5rem;
     width: 80px;
@@ -797,7 +797,7 @@ input[type="range"]::-webkit-range-progress {
   .h31 span:nth-child(2){
     font-size: 2.5rem;
     left: 8rem;
-    top: 24px;
+    top: 23.55px;
   }
 
   /* .home-child-2 .h32 {
